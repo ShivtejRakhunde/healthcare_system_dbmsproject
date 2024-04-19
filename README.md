@@ -1,4 +1,5 @@
-Healthcare System
+	Healthcare System
+ 
 Overview:
 	This project 'Healthcare System' is designed to streamline various administrative tasks within a healthcare sector. It aims to facilitate efficient management of patient records, appointments, staff management and more.
 
