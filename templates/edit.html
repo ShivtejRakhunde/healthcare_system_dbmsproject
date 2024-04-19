@@ -1,0 +1,120 @@
+{% extends "base.html" %} {% block title %} Updates Booking Details {% endblock
+title %} {% block body %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center text-danger">Update Your Slot</h4>
+          <form action="/edit/{{ post.pid }}" method="post">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                value="{{ current_user.email }}"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                value="{{ post.name }}"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="gender" class="form-label">Gender</label>
+              <select class="form-select" id="gender" name="gender" required>
+                <option value="{{ post.gender }}" selected>
+                  {{ post.gender }}
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="slot" class="form-label">Slot</label>
+              <select class="form-select" id="slot" name="slot" required>
+                <option value="{{ post.slot }}" selected>
+                  {{ post.slot }}
+                </option>
+                <option value="morning">Morning</option>
+                <option value="evening">Evening</option>
+                <option value="night">Night</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="time" class="form-label">Time</label>
+              <input
+                type="time"
+                class="form-control"
+                value="{{ post.time }}"
+                name="time"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Date</label>
+              <input
+                type="date"
+                class="form-control"
+                value="{{ post.date }}"
+                name="date"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="disease" class="form-label">Disease</label>
+              <input
+                type="text"
+                class="form-control"
+                value="{{ post.disease }}"
+                id="disease"
+                name="disease"
+                placeholder="Disease"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="dept" class="form-label">Doctor Dept</label>
+              <input
+                type="text"
+                class="form-control"
+                value="{{ post.dept }}"
+                id="dept"
+                name="dept"
+                placeholder="Doctor Dept"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Phone Number</label>
+              <input
+                type="number"
+                class="form-control"
+                value="{{ post.number }}"
+                id="number"
+                name="number"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-warning btn-block">
+              Update
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
