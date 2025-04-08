@@ -1,24 +1,110 @@
-	Healthcare System
- 
-Overview:
-	This project 'Healthcare System' is designed to streamline various administrative tasks within a healthcare sector. It aims to facilitate efficient management of patient records, appointments, staff management and more.
+# 🏥 Healthcare System
 
-Features:
-1)Registration:
-	Registration for Doctors and Patients.
-2)Login:
-	Authentication for users.
-3)Patient Management: 
-	Easily add, update, delete and manage patient records, including personal information, medical conditions.
-4)Appointment Booking: 
-	Book and manage appointments for patients with doctors and other hospital services.
-5)Staff Management: 
-	Keep track of hospital doctors.
-6)Triggering: 
-	Generate reports for various activities done by patients and doctors.
+A web-based healthcare management system built with Flask and MySQL to streamline administrative tasks such as patient registration, appointment bookings, staff tracking, and generating activity reports.
 
+---
 
-Technologies Used:
-Database: MySQL
-Backend: Python Flask
-Frontend: HTML, CSS, Bootstramp
+## 📌 Overview
+
+The **Healthcare System** is designed to help healthcare providers efficiently manage:
+
+- Patient records
+- Doctor/staff details
+- Appointment scheduling
+- Activity logging
+
+This system brings automation and ease-of-use to healthcare operations, improving both administrative workflows and patient experience.
+
+---
+
+## ✨ Features
+
+1. **User Registration & Login**
+   - Separate registration for Doctors and Patients
+   - Secure login with password hashing
+
+2. **Patient Management**
+   - Add, update, delete, and view patient records
+   - Store patient details, disease information, and appointment times
+
+3. **Appointment Booking**
+   - Book slots with doctors and hospital services
+   - View or modify appointments as needed
+
+4. **Staff Management**
+   - Register and view hospital doctors by department
+   - Search functionality for checking doctor availability
+
+5. **Trigger-Based Reporting**
+   - Track and log actions like booking, updating, or deleting patient records
+   - View reports for auditing and administrative insights
+
+---
+
+## 🛠 Technologies Used
+
+| Layer       | Technology       |
+|-------------|------------------|
+| **Frontend**| HTML, CSS, Bootstrap |
+| **Backend** | Python Flask     |
+| **Database**| MySQL            |
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Requirements
+
+- Python 3.x
+- Flask
+- XAMPP (for MySQL)
+
+### 📦 Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/healthcare-system.git
+   cd healthcare-system
+
+2. Install Dependencies
+```bash
+pip install flask flask_sqlalchemy flask_login werkzeug
+
+```
+
+3. Configure MySQL
+
+- Start XAMPP and open phpMyAdmin
+
+- Create a new database: hms
+
+- Import the schema (if you have an SQL file)
+
+- Or let Flask create the tables automatically
+
+4. Update Configuration (if needed)
+```bash
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:your_password@localhost/hms'
+```
+5. Run the Flask App
+```bash
+   python app.py
+```
+
+### 📂 Folder Structure
+```bash
+/healthcare-system/
+│
+├── templates/           # HTML templates
+├── static/              # CSS/JS files
+├── main.py               # Main Flask application
+├── HealthCareSystem.sql     # Sql queries
+└── README.md            # Project documentation
+```
+
+### 🔐 Security Notes
+- Passwords are hashed using werkzeug.security
+- Flask-Login is used for session management
+- SQLAlchemy ORM is used for most DB operations
+
+  
