@@ -96,7 +96,8 @@ app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:your_password@localhost/hms'
 /healthcare-system/
 │
 ├── templates/           # HTML templates
-├── static/              # CSS/JS files
+├── static/               # CSS/JS files
+├── images/              # Screenshots
 ├── main.py               # Main Flask application
 ├── HealthCareSystem.sql     # Sql queries
 └── README.md            # Project documentation
@@ -111,11 +112,17 @@ app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:your_password@localhost/hms'
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](images/Screenshot (150).png)
+![Home Page](https://github.com/ShivtejRakhunde/healthcare_system_dbmsproject/blob/master/images/Screenshot%20(150).png
+)
+
+
 
 ### 📝 User Login
-![User Login](images/Screenshot (152).png)
+![User Login](https://github.com/ShivtejRakhunde/healthcare_system_dbmsproject/blob/master/images/Screenshot%20(152).png)
+
+
 
 ### 👨‍⚕️ Appointment Booking
-![Appointment Booking](images/Screenshot (151).png)
+![Appointment Booking](https://github.com/ShivtejRakhunde/healthcare_system_dbmsproject/blob/master/images/Screenshot%20(151).png
+)
   
