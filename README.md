@@ -107,4 +107,15 @@ app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:your_password@localhost/hms'
 - Flask-Login is used for session management
 - SQLAlchemy ORM is used for most DB operations
 
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](images/Screenshot (150).png)
+
+### 📝 User Login
+![User Login](images/Screenshot (152).png)
+
+### 👨‍⚕️ Appointment Booking
+![Appointment Booking](images/Screenshot (151).png)
   
